@@ -1,6 +1,6 @@
 .nav{
-    height: 55px;
-    border-bottom: 0.5px solid rgb(240, 240, 240);
+    height: 57px;
+    border-bottom: 2px solid rgb(240, 240, 240);
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -22,12 +22,19 @@
         border-radius: 8px;
         width: 30%;
 
+        .icon{
+            cursor: pointer;
+            font-size: 23px;
+        }
+
         input{
             border: none;
             outline: none;
             background-color: transparent;
-            padding-left: 5px;
+            padding: 2px 5px;
             width: 100%;
+            color: #555;
+            letter-spacing: 00.5px;
             
 
             &::placeholder{
