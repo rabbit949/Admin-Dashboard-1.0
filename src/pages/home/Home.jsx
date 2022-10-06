@@ -3,7 +3,7 @@ import Charts from '../../components/charts/Charts';
 import Featured from '../../components/featured/Featured';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
-import Table from '../../components/table/Table';
+import List from '../../components/table/List';
 import Widgets from '../../components/widgets/Widgets';
 import './home.scss';
 
@@ -25,7 +25,7 @@ const Home = () => {
 				</div>
 				<div className='listContainer'>
 					<div className='listTitle'>Lastest Trasnactions</div>
-					<Table />
+					<List />
 				</div>
 			</div>
 		</div>
