@@ -126,11 +126,27 @@ const DataTable = () => {
 		},
 	];
 
+	const actions = [
+		{
+			field: 'actions',
+			headerName: 'Actions',
+			width: 230,
+			renderCell: () => {
+				return (
+					<div className='cellAction'>
+						<button className='viewButtton'>View</button>
+						<button className='deleteButtton'>Delete</button>
+					</div>
+				);
+			},
+		},
+	];
+
 	return (
 		<div className='dataTable'>
 			<DataGrid
 				rows={userRows}
-				columns={userColumns}
+				columns={userColumns.concat(actions)}
 				pageSize={8}
 				rowsPerPageOptions={[8]}
 				checkboxSelection
