@@ -1,4 +1,5 @@
 import EditIcon from '@mui/icons-material/Edit';
+import Charts from '../../components/charts/Charts';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import './single.scss';
@@ -44,7 +45,9 @@ const Single = () => {
 							</div>
 						</div>
 					</div>
-					<div className='right'></div>
+					<div className='right'>
+						<Charts aspect={4 / 1} title='User Spendings (Last Six Months)' />
+					</div>
 				</div>
 				<div className='bottom'></div>
 			</div>

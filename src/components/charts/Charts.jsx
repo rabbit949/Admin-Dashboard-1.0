@@ -8,7 +8,7 @@ import {
 } from 'recharts';
 import './charts.scss';
 
-const Charts = () => {
+const Charts = ({ aspect, title }) => {
 	// sample data for chart
 	const data = [
 		{ name: 'January', Total: 1200 },
@@ -20,8 +20,8 @@ const Charts = () => {
 	];
 	return (
 		<div className='chart'>
-			<h2 className='title'>Last 6 Months (Revenue)</h2>
-			<ResponsiveContainer width='100%' aspect={2 / 1}>
+			<h2 className='title'>{title}</h2>
+			<ResponsiveContainer width='100%' aspect={aspect}>
 				<AreaChart
 					width={730}
 					height={250}

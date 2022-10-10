@@ -34,21 +34,14 @@
                     }
                 }
 
-
-
-                .title{
-                    color: #888;
-                    margin-bottom: 10px;
-
-
-                }
                 .item{
                     display: flex;
                     gap: 20px;
                     .itemImage{
                         margin-top: 20px;
-                        height: 100px;
-                        width: 100px;
+                        margin-right: 8px;
+                        height: 120px;
+                        width: 120px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
@@ -67,6 +60,7 @@
                             .itemKey{
                                 font-weight: bold;
                                 color: gray;
+                                margin-right: 5px;
                             }
                             .itemValue{
                                 font-weight: 300;
@@ -81,11 +75,17 @@
 
             .right{
                 flex: 2;
-                padding: 10px 15px;
                 -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47) ;
                 box-shadow: 2px 4px 10px 1px rgba(201,201,201 ,0.47) ;
                 border-radius: 10px;
             }
         }
+    }
+    .title{
+        color: #999;
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 10px;
     }
 }

@@ -19,6 +19,13 @@
         }
         .icon{
             cursor: pointer;
+            font-size: 25px;
+            padding: 2px;
+            border-radius: 50%;
+            transition: 0.3s ease-in;
+            &:hover{
+                background-color: rgba(211, 211, 211, 0.35);
+            }
         }
     }
 
