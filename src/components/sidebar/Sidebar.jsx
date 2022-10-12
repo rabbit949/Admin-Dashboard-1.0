@@ -9,32 +9,40 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import SettingsIcon from '@mui/icons-material/Settings';
 
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './sidebar.scss';
 
 const Sidebar = () => {
 	return (
 		<aside className='sidebar'>
 			<div className='top'>
-				<h2 className='brand'>Dashboard</h2>
+				<Link to='/' style={{ textDecoration: 'none' }}>
+					<h2 className='brand'>Dashboard</h2>
+				</Link>
 			</div>
 			<hr />
 			<div className='center'>
 				<ul>
 					<p className='title'>Main</p>
-					<li>
-						<DashboardIcon className='icon' />
-						<span>Dashboard</span>
-					</li>
+					<Link to='/' style={{ textDecoration: 'none' }}>
+						<li>
+							<DashboardIcon className='icon' />
+							<span>Dashboard</span>
+						</li>
+					</Link>
 					<p className='title'>Users & Info</p>
-					<li>
-						<GroupIcon className='icon' />
-						<span>Users</span>
-					</li>
-					<li>
-						<InventoryIcon className='icon' />
-						<span>Products</span>
-					</li>
+					<Link to='/users' style={{ textDecoration: 'none' }}>
+						<li>
+							<GroupIcon className='icon' />
+							<span>Users</span>
+						</li>
+					</Link>
+					<Link to='/products' style={{ textDecoration: 'none' }}>
+						<li>
+							<InventoryIcon className='icon' />
+							<span>Products</span>
+						</li>
+					</Link>
 					<li>
 						<ProductionQuantityLimitsIcon className='icon' />
 						<span>Orders</span>
