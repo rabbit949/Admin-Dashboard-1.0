@@ -11,10 +11,17 @@
         justify-content: center;
 
         .brand{
-            font-size: 20px;
-            font-weight: 700;
-            color: #74518f; 
-            cursor: pointer;  
+            font-size: 24px;
+            font-weight: bolder;
+            text-shadow: #74518f;
+            cursor: pointer;
+            color: transparent;
+            background: #74518f;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+            font-family: cursive;
         }
     }
 

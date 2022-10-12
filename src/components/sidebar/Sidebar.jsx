@@ -16,7 +16,7 @@ const Sidebar = () => {
 	return (
 		<aside className='sidebar'>
 			<div className='top'>
-				<h2 className='brand'>Admin Panel</h2>
+				<h2 className='brand'>Dashboard</h2>
 			</div>
 			<hr />
 			<div className='center'>
