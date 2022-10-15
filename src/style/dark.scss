@@ -1,0 +1,97 @@
+.dark{
+    background-color: #222;
+    color: rgb(175, 175, 175);
+
+    .chartGrid{
+        stroke: rgba(228, 228, 228, 0.3);
+    }
+
+    .table{
+        background-color: #222;
+
+        .tableCell, .tableBody{
+            color: rgb(175, 175, 175);
+        }
+    }
+
+    .nav{
+        color: rgb(175, 175, 175);
+        border-color: #333;
+
+        .language{
+        color: rgb(175, 175, 175);     
+        }
+
+        .search{
+            border-color: gray;
+        }
+    }
+
+    .sidebar{
+        background-color: #222;
+        border-color: #333;
+
+        hr{
+        border-color: inherit;
+        }
+
+        .top{
+            .brand{
+                color: #999;
+            }
+        }
+
+        ul{
+            li{
+                &:hover{
+                    background-color: #333;
+                }
+
+                .icon{
+                    color: #999;
+                }
+            }
+        }
+    }
+
+    .dataTable{
+        padding-bottom: 0px;
+        .datatableTitle{
+            margin-bottom: 0px;
+            .link{
+                color: rgb(3, 170, 170);
+                border-color: currentColor;
+            }
+        }
+        .dataGrid{
+            background-color: #222;
+            color: rgb(175, 175, 175);
+            border: none;
+            p, button, input {
+            color: rgb(175, 175, 175);
+            }
+
+            .viewButtton,{
+                color: rgb(175, 175, 175);
+                border-color: currentColor;
+            }
+            .deleteButtton{
+                color: rgb(241, 11, 57);
+                border-color: currentColor;
+
+            }
+        }
+    }
+    label{
+        color: rgb(175, 175, 175);
+    }
+    input{
+        background-color: transparent;
+        color: rgb(175, 175, 175);
+    }
+    input[type='checkbox']{
+        background-color: transparent;
+        color: rgb(175, 175, 175);
+    }
+   
+};

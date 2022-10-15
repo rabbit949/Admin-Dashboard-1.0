@@ -156,6 +156,7 @@ const DataTable = () => {
 				</Link>
 			</div>
 			<DataGrid
+				className='dataGrid'
 				rows={userRows}
 				columns={userColumns.concat(actions)}
 				pageSize={8}

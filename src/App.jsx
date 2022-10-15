@@ -5,10 +5,11 @@ import ListPage from './pages/list/ListPage';
 import Login from './pages/login/Login';
 import New from './pages/new/New';
 import Single from './pages/single/Single';
+import './style/dark.scss';
 
 function App() {
 	return (
-		<>
+		<div className={'app'}>
 			<BrowserRouter>
 				<Routes>
 					<Route path='/'>
@@ -33,7 +34,7 @@ function App() {
 					</Route>
 				</Routes>
 			</BrowserRouter>
-		</>
+		</div>
 	);
 }
 
