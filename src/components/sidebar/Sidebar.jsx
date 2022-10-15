@@ -8,11 +8,15 @@ import Person2Icon from '@mui/icons-material/Person2';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { useContext } from 'react';
 
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../../context/DarkModeContext';
 import './sidebar.scss';
 
 const Sidebar = () => {
+	const { dispatch } = useContext(DarkModeContext);
+
 	return (
 		<aside className='sidebar'>
 			<div className='top'>
@@ -78,8 +82,14 @@ const Sidebar = () => {
 			<div className='bottom'>
 				<p className='title'>Theme Options</p>
 				<div className='colors'>
-					<div className='themeOptions'></div>
-					<div className='themeOptions'></div>
+					<div
+						className='themeOptions'
+						onClick={() => dispatch({ type: 'LIGHT' })}
+					></div>
+					<div
+						className='themeOptions'
+						onClick={() => dispatch({ type: 'DARK' })}
+					></div>
 				</div>
 			</div>
 		</aside>
