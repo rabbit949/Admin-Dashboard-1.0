@@ -17,11 +17,11 @@ The **AI-Powered SaaS Dashboard** is an interactive web-based platform designed 
 #### Installation
 1. Clone the repository:  
    ```bash
-   git clone [Repository Link]
+   git clone https://github.com/rabbit949/Admin-Dashboard-1.0/
    ```
 2. Navigate to the project directory:  
    ```bash
-   cd saas-dashboard
+   cd Admin-Dashboard-1.0
    ```
 3. Install dependencies:  
    ```bash
